@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.container {
+  position: relative;
+
+  .input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: $border-radius-main;
+  }
+
+  .error {
+    color: $red-main;
+    position: absolute;
+    top: 105%;
+    left: 0;
+  }
+}

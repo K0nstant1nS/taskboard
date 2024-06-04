@@ -1,0 +1,11 @@
+@import './variables';
+
+@mixin input-base {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: $border-radius-main;
+
+  &:focus {
+    border: 1px solid $blue-main;
+  }
+}

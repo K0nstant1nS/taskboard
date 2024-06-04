@@ -3,7 +3,7 @@ const { unauthorized } = require('../../utils/errors');
 const UserModel = require('../../models/user');
 
 async function getMe({ res, _id}) {
-  const user = await UserModel.findById(_id).select('-password');
+  const user = await UserModel.findById(_id).select('-password')
   if(!user) {
     return unauthorized(res);
   }

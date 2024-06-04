@@ -1,4 +1,4 @@
-const { Schema, default: mongoose } = require("mongoose");
+import { Schema, default as mongoose } from "mongoose";
 
 const TaskSchema = new mongoose.Schema({
   _id: {
